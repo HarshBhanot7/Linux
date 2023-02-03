@@ -1,0 +1,222 @@
+; cd = to go in another directory
+cd = to go to the home folder
+cd .. = to move one directory up
+cd- = move to your previous directory
+#cd without a directory name changes back to the home directory
+
+cp = cp command to copy files from the current directory to a different directory
+cp file1 file2 = copy file1 to file2.
+cp file1 file2 directory = copy file1 and file2 in directory.
+cp -R directory1 directory2 = copy directory1 to directory2.
+eg:- cp source file destination file
+
+
+pwd = tells the present direrctory in which you are..
+pwd -L: Prints the symbolic path
+pwd -P: Prints the actual path.
+
+rm = to delete any file
+rm -rf * = to delete all the files and directories.
+rm -r directoryName = to delete the directory forecfully.even if it contains files.
+rmdir = to delete any directory
+mkdir {1..10} = create mutiple 10 directories.
+
+ls = list all the files and directories.
+ls -t = sorts the files by modification time. Last modified file will be displayed first.
+ls -1 = display one file or directory per line.
+ls -l = display long listing information about file and directory.
+ls -lh = display long listing information in human readable form.
+ls -ld = display details information about directory.
+ls -lt = display details information with last modified time sorting.
+ls -ltr = display details information with last modified time sorting in reverse.
+ls -a or -A = display all the hidden files.
+ls -i = display all content with inode number i.e unique unmber.
+ls -d */ = to display list of diretories.
+ls -al = 
+ls -s = display size of files and directories.
+
+
+stat filename = to check the timestamps of the file
+touch filename = to make new empty file
+touch -am filename = to change the timestamp of Access,Modify and change.
+touch -a filename =  this will change the timestamp of Access, and Change.
+touch -m filename =  this will change the timestamp of Access, and Change.
+touch -r file1 file2 = modify the timestamp of file2 same as file1
+touch -t YYMMDDHHMM filename = to change the timestamp with your choice.
+touch -c filename = this command will not create an empty file, if that file doesn't exist.
+touch -d YYMMDD filename = to change only date of timestamp.
+
+clear = clear all the commands
+
+cat >filename = to create file and add content to the file.  #control+c,d to save the content.
+cat filename = to view the content of the file.
+cat file1 >file2 = to copy content of file1 to file2.
+cat file1 file2 file3 >file4 = to copy content of file1 file2 file3 to file4.
+cat >>file = to append more content to the file.
+cat -n filename =  display content with the line number.
+
+history =  gives the history of all commands used.
+
+man commandName = This is used to check to all commands about particular command.
+vi harsh.txt
+set 
+
+
+
+
+
+
+cal 2023 | less
+date --help
+date +%r
+date +%y
+date +%Y
+
+cat /etc/passwd |wc -l
+head /etc/passwd |wc -l
+tail /etc/passwd |wc -l
+cat /etc/passwd | tail
+for i in {1..30} ; do echo "This is line $i" >> harsh.txt; done
+vi harsh.txt
+head -n 20 harsh.txt
+head -n 20 harsh.txt | tail -n 5
+date > date.txt
+cat date.txt
+daet > date.txt
+daet 2> date.txt
+cat date.txt
+date > date.txt 2> error.txt
+echo "This is new file" > new.txt
+echo "text more added" > new.txt   #This will overwrite
+echo "Text is added again" >> new.txt
+echo "one more line is added" &>> new.txt
+vim -O file1 file2 => 2 files will open in vim vertically editor alternatively.
+ctrl+w+ arrow = to change the cursor.
+shift+G = to come down.
+vim -o file1 file2 => 2 files will open in vim horizontally editor alternatively.
+ls -l
+ll
+systemctl status sshd
+ls -a
+
+mkdir -p => helps to create multiple files in parent directory
+eg= mkdir directoryName/d1 directoryName/d2 directoryName/d3 
+-----------------------------------------------------------------------------------------------------------------------------------------
+USER MANAGEMENT SYSTEM
+useradd
+groupadd
+usermod
+groupmod
+userdel
+userdel -r => to delete all directories linked to that user
+groupdel
+su - => to go to root
+
+
+
+
+
+
+
+NOTES-:
+/ = starting from slash is parent or root directory
+types:
+1. /etc directory = impersistant files i.e can't be delete.
+2. /tmp directory = temporary file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

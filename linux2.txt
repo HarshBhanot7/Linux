@@ -1,0 +1,83 @@
+Printing 15 to 20 lines from a file
+$ for i in {1..30} ; do echo "this is line $i " >>ashish.txt ; done
+
+$ vi ashish
+then press esc :set nu
+			:wq
+$head  -n  20 ashish.txt
+
+$head -n 20 ashish.txt | tail -n 5
+
+
+&>> - combination of error and output
+
+ecs + . - used to print the last arguement used in previous command
+
+>,>> - output goes into file
+2> , 2>> - error goes into file
+
+$ history
+$ !214  (it will show the 214th command from the history)  
+
+shortcut for command prompt(in terminal
+1.  ctrl + a (to start)
+2.  ctrl + e (to end)
+3.  ctrl + arrow  (left or right)
+4. ctrl + w (delete) 
+5.  ctrl + k ( to delete right content from the command prompt)
+6. ctrl + u (to delete left content from the command prompt)
+7 . ctrl + r (it will print the most matching command used )
+
+ques. 
+1. which answer displays to a terminal and ignores all errors?
+ans.   2>/dev/null
+
+2. which answer sends output to a file and sends to a different file?
+ans.  >file 2>file2
+
+
+IN VI EDITOR
+i - insert
+o- insert in next line.
+a- next word.
+________-
+
+shift + g  -> move to end of line in vi editor        
+shift +h ->     
+gg  -> move to top of line in vi editor 
+dd -> delete
+u -> undo
+_________
+
+to delete lines till the number->
+d + (number) +  down arrow
+_________
+
+yy-> copy 
+y +(number) + down arrow ->  copy
+p -> paste
+_________
+
+dd-> cut 
+p-> paste
+________
+
+press v to go into visual mode 
+ctrl + v to go into visual block for selecting accurate block
+
+_________
+TO FIND WORD in editor
+use  "/" 
+shift + n  -  search upward
+
+use "?" for reverse searching
+
+:%s/old/new/g - to change every occurence in the whole file
+
+________________
+
+IN VIM 
+to open two files at the same time command ->  vim -O file1 file2      (Vertical mode)
+horizontal mode - > vim -o file1 file2
+
+To switch between files - > ctrl +w+ right arrow   or ctrl+ww
